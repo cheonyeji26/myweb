@@ -1,0 +1,150 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px; /* 패딩 조정 */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 900px; /* 최대 너비 증가 */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.05em; /* 약간 작게 조정 */
+}
+
+.input-area {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+textarea {
+    width: calc(100% - 20px); /* 패딩 고려 */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95em;
+    line-height: 1.6;
+    box-sizing: border-box;
+    resize: vertical; /* 세로 크기만 조절 가능 */
+}
+
+#nameCountStatus {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+    text-align: right;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px; /* 하단 마진 조정 */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    min-height: 1.2em; /* 메시지 없을 때 공간 유지 */
+    margin-bottom: 15px;
+}
+
+.teams-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 25px; /* 팀 간 간격 증가 */
+    text-align: left;
+    margin-top: 20px; /* 상단 마진 추가 */
+}
+
+.team {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.team h2 {
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    font-size: 1.3em; /* 약간 작게 조정 */
+}
+
+.team ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 450px; /* 최대 높이 증가 */
+    overflow-y: auto;
+}
+
+.team li {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    color: #495057;
+    font-size: 0.95em; /* 약간 작게 조정 */
+    word-break: break-all; /* 긴 이름 줄바꿈 */
+}
+
+/* 스크롤바 스타일 (선택적) */
+.team ul::-webkit-scrollbar {
+    width: 8px;
+}
+.team ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.team ul::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+.team ul::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}

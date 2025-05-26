@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>참가자 입력 랜덤 조 나누기 (39명)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>참가자 입력 랜덤 조 나누기</h1>
+        <p>총 39명의 참가자를 랜덤하게 두 조로 나눕니다. (20명 / 19명)</p>
+
+        <div class="input-area">
+            <label for="participantNames">참가자 명단 (한 줄에 한 명씩, 총 39명 입력):</label>
+            <textarea id="participantNames" rows="15" placeholder="예시:&#10;홍길동&#10;김철수&#10;이영희&#10;... (총 39명)"></textarea>
+            <p id="nameCountStatus">입력된 참가자 수: 0 / 39</p>
+        </div>
+
+        <button id="divideButton">조 나누기 시작!</button>
+        <p id="errorMessage" class="error-message"></p>
+
+        <div class="teams-container">
+            <div class="team">
+                <h2 id="teamAName">A조 (0명)</h2>
+                <ul id="teamAList"></ul>
+            </div>
+            <div class="team">
+                <h2 id="teamBName">B조 (0명)</h2>
+                <ul id="teamBList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
