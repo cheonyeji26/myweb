@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 사다리 게임</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <h1>누가누가 걸릴까~ 사다리 게임 >.<</h1>
+
+        <div class="setup-area">
+            <div class="input-group">
+                <label for="player-count">참가자 수 (2-8명):</label>
+                <input type="number" id="player-count" value="4" min="2" max="8">
+            </div>
+
+            <div id="player-names-area">
+                </div>
+
+            <div id="results-area">
+                </div>
+
+            <button id="generate-inputs-button">이름/벌칙 정하기</button>
+            <button id="start-game-button" style="display:none;">게임 시작 & 사다리 그리기</button>
+        </div>
+
+        <div id="ladder-container">
+            </div>
+
+        <div id="game-result-area">
+            </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
