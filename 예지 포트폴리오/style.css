@@ -1,0 +1,105 @@
+/* 예지 스타일 폰트 적용 */
+@import url('https://fonts.googleapis.com/css2?family=SUIT:wght@400;700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Cafe24Ssurround.css');
+
+body {
+  font-family: 'SUIT', sans-serif;
+  background: linear-gradient(to bottom, #fffaf2, #daf3f8);
+  color: #443322;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+header {
+  background-color: #fff0e6;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-bottom: 2px dashed #ffc7a6;
+  box-shadow: 0 4px 10px rgba(255, 174, 113, 0.2);
+}
+
+header h1 {
+  font-family: 'Cafe24Ssurround', sans-serif;
+  font-size: 3rem;
+  color: #f77f00;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #886644;
+  letter-spacing: 1px;
+}
+
+section#about {
+  max-width: 850px;
+  background-color: #fff8f0;
+  margin: 2rem auto;
+  padding: 2.5rem 2.5rem;
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(255, 174, 113, 0.1);
+  border: 1px solid #ffe2cc;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f77f00;
+  border-bottom: 2px solid #ffc7a6;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  color: #ff914d;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+.info, .experience, .education, .awards, .certifications, .overseas, .skills, .keywords {
+  margin-bottom: 2rem;
+  background-color: #fffaf7;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(255, 174, 113, 0.05);
+  border: 1px dashed #ffe2cc;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 1.2rem;
+}
+
+ul li::before {
+  content: '🌼 ';
+  margin-right: 0.5rem;
+}
+
+p, li {
+  font-size: 1rem;
+  color: #444;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tags span {
+  background-color: #ffe2cc;
+  color: #d35400;
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(255, 184, 120, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.tags span:hover {
+  transform: scale(1.05);
+  background-color: #ffd8bb;
+}
