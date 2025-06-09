@@ -103,3 +103,23 @@ p, li {
   transform: scale(1.05);
   background-color: #ffd8bb;
 }
+
+.sub-links {
+  list-style-type: '↳ ';
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.sub-links li {
+  margin-bottom: 0.4rem;
+}
+
+.sub-links a {
+  color: #f77f00;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sub-links a:hover {
+  text-decoration: underline;
+}
